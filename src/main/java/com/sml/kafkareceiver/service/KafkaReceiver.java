@@ -1,10 +1,8 @@
 package com.sml.kafkareceiver.service;
 
-import com.sml.kafkareceiver.config.ConsumerKafkaProperties;
 import com.sml.kafkareceiver.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.handler.annotation.Headers;
