@@ -27,9 +27,14 @@ public class UserConsumerConfig {
         Map<String,Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, consumerProperties.getKafkaServer());
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-       props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, AvroDeserializer.class);
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, AvroDeserializer.class);
         props.put(ConsumerConfig.GROUP_ID_CONFIG,consumerProperties.getKafkaGroupId());
         //props.put (ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
+
+       // props.put("sasl.mechanism", "PLAIN");
+     //   props.put("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule   required username='test_user'   password='<secret>';");
+        //props.put("security.protocol", "SASL_SSL");
+       // props.put("security.protocol", "SASL_PLAINTEXT");
 
         return props;
     }
@@ -49,7 +54,6 @@ public class UserConsumerConfig {
         ConcurrentKafkaListenerContainerFactory<String,IntegralParameters> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
-
         return factory;
     }
 }
