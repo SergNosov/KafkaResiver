@@ -15,7 +15,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordSpecifications extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 5009827299060469327L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod haracteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie haracteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znachenie haracteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"format peredachi haracteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmereniya\",\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -71,19 +71,19 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
     return DECODER.decode(b);
   }
 
-  /** kod harakteristiki */
+  /** kod haracteristiki */
    private int specCode;
-  /** naimenovanie harakteristiki */
+  /** naimenovanie haracteristiki */
    private java.lang.CharSequence specName;
   /** tip dannyh (1-string, 2-number, 3-date) */
    private int specTypeCode;
   /** naimenovanie tipa dannyh */
    private java.lang.CharSequence specTypeName;
-  /** znacheniye harakteristiki */
+  /** znachenie haracteristiki */
    private java.lang.Float specValue;
-  /** fomat peredachi harakteristiki */
+  /** format peredachi haracteristiki */
    private java.lang.CharSequence specFormat;
-  /** edenica izmerenya */
+  /** edenica izmereniya */
    private java.lang.CharSequence specMeasure;
 
   /**
@@ -95,13 +95,13 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * All-args constructor.
-   * @param specCode kod harakteristiki
-   * @param specName naimenovanie harakteristiki
+   * @param specCode kod haracteristiki
+   * @param specName naimenovanie haracteristiki
    * @param specTypeCode tip dannyh (1-string, 2-number, 3-date)
    * @param specTypeName naimenovanie tipa dannyh
-   * @param specValue znacheniye harakteristiki
-   * @param specFormat fomat peredachi harakteristiki
-   * @param specMeasure edenica izmerenya
+   * @param specValue znachenie haracteristiki
+   * @param specFormat format peredachi haracteristiki
+   * @param specMeasure edenica izmereniya
    */
   public RecordSpecifications(java.lang.Integer specCode, java.lang.CharSequence specName, java.lang.Integer specTypeCode, java.lang.CharSequence specTypeName, java.lang.Float specValue, java.lang.CharSequence specFormat, java.lang.CharSequence specMeasure) {
     this.specCode = specCode;
@@ -146,7 +146,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Gets the value of the 'specCode' field.
-   * @return kod harakteristiki
+   * @return kod haracteristiki
    */
   public int getSpecCode() {
     return specCode;
@@ -155,7 +155,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Sets the value of the 'specCode' field.
-   * kod harakteristiki
+   * kod haracteristiki
    * @param value the value to set.
    */
   public void setSpecCode(int value) {
@@ -164,7 +164,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Gets the value of the 'specName' field.
-   * @return naimenovanie harakteristiki
+   * @return naimenovanie haracteristiki
    */
   public java.lang.CharSequence getSpecName() {
     return specName;
@@ -173,7 +173,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Sets the value of the 'specName' field.
-   * naimenovanie harakteristiki
+   * naimenovanie haracteristiki
    * @param value the value to set.
    */
   public void setSpecName(java.lang.CharSequence value) {
@@ -218,7 +218,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Gets the value of the 'specValue' field.
-   * @return znacheniye harakteristiki
+   * @return znachenie haracteristiki
    */
   public java.lang.Float getSpecValue() {
     return specValue;
@@ -227,7 +227,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Sets the value of the 'specValue' field.
-   * znacheniye harakteristiki
+   * znachenie haracteristiki
    * @param value the value to set.
    */
   public void setSpecValue(java.lang.Float value) {
@@ -236,7 +236,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Gets the value of the 'specFormat' field.
-   * @return fomat peredachi harakteristiki
+   * @return format peredachi haracteristiki
    */
   public java.lang.CharSequence getSpecFormat() {
     return specFormat;
@@ -245,7 +245,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Sets the value of the 'specFormat' field.
-   * fomat peredachi harakteristiki
+   * format peredachi haracteristiki
    * @param value the value to set.
    */
   public void setSpecFormat(java.lang.CharSequence value) {
@@ -254,7 +254,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Gets the value of the 'specMeasure' field.
-   * @return edenica izmerenya
+   * @return edenica izmereniya
    */
   public java.lang.CharSequence getSpecMeasure() {
     return specMeasure;
@@ -263,7 +263,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
   /**
    * Sets the value of the 'specMeasure' field.
-   * edenica izmerenya
+   * edenica izmereniya
    * @param value the value to set.
    */
   public void setSpecMeasure(java.lang.CharSequence value) {
@@ -311,19 +311,19 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<RecordSpecifications>
     implements org.apache.avro.data.RecordBuilder<RecordSpecifications> {
 
-    /** kod harakteristiki */
+    /** kod haracteristiki */
     private int specCode;
-    /** naimenovanie harakteristiki */
+    /** naimenovanie haracteristiki */
     private java.lang.CharSequence specName;
     /** tip dannyh (1-string, 2-number, 3-date) */
     private int specTypeCode;
     /** naimenovanie tipa dannyh */
     private java.lang.CharSequence specTypeName;
-    /** znacheniye harakteristiki */
+    /** znachenie haracteristiki */
     private java.lang.Float specValue;
-    /** fomat peredachi harakteristiki */
+    /** format peredachi haracteristiki */
     private java.lang.CharSequence specFormat;
-    /** edenica izmerenya */
+    /** edenica izmereniya */
     private java.lang.CharSequence specMeasure;
 
     /** Creates a new Builder */
@@ -405,7 +405,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Gets the value of the 'specCode' field.
-      * kod harakteristiki
+      * kod haracteristiki
       * @return The value.
       */
     public int getSpecCode() {
@@ -415,7 +415,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Sets the value of the 'specCode' field.
-      * kod harakteristiki
+      * kod haracteristiki
       * @param value The value of 'specCode'.
       * @return This builder.
       */
@@ -428,7 +428,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Checks whether the 'specCode' field has been set.
-      * kod harakteristiki
+      * kod haracteristiki
       * @return True if the 'specCode' field has been set, false otherwise.
       */
     public boolean hasSpecCode() {
@@ -438,7 +438,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Clears the value of the 'specCode' field.
-      * kod harakteristiki
+      * kod haracteristiki
       * @return This builder.
       */
     public nlmk.l3.sup.RecordSpecifications.Builder clearSpecCode() {
@@ -448,7 +448,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Gets the value of the 'specName' field.
-      * naimenovanie harakteristiki
+      * naimenovanie haracteristiki
       * @return The value.
       */
     public java.lang.CharSequence getSpecName() {
@@ -458,7 +458,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Sets the value of the 'specName' field.
-      * naimenovanie harakteristiki
+      * naimenovanie haracteristiki
       * @param value The value of 'specName'.
       * @return This builder.
       */
@@ -471,7 +471,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Checks whether the 'specName' field has been set.
-      * naimenovanie harakteristiki
+      * naimenovanie haracteristiki
       * @return True if the 'specName' field has been set, false otherwise.
       */
     public boolean hasSpecName() {
@@ -481,7 +481,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Clears the value of the 'specName' field.
-      * naimenovanie harakteristiki
+      * naimenovanie haracteristiki
       * @return This builder.
       */
     public nlmk.l3.sup.RecordSpecifications.Builder clearSpecName() {
@@ -579,7 +579,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Gets the value of the 'specValue' field.
-      * znacheniye harakteristiki
+      * znachenie haracteristiki
       * @return The value.
       */
     public java.lang.Float getSpecValue() {
@@ -589,7 +589,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Sets the value of the 'specValue' field.
-      * znacheniye harakteristiki
+      * znachenie haracteristiki
       * @param value The value of 'specValue'.
       * @return This builder.
       */
@@ -602,7 +602,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Checks whether the 'specValue' field has been set.
-      * znacheniye harakteristiki
+      * znachenie haracteristiki
       * @return True if the 'specValue' field has been set, false otherwise.
       */
     public boolean hasSpecValue() {
@@ -612,7 +612,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Clears the value of the 'specValue' field.
-      * znacheniye harakteristiki
+      * znachenie haracteristiki
       * @return This builder.
       */
     public nlmk.l3.sup.RecordSpecifications.Builder clearSpecValue() {
@@ -623,7 +623,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Gets the value of the 'specFormat' field.
-      * fomat peredachi harakteristiki
+      * format peredachi haracteristiki
       * @return The value.
       */
     public java.lang.CharSequence getSpecFormat() {
@@ -633,7 +633,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Sets the value of the 'specFormat' field.
-      * fomat peredachi harakteristiki
+      * format peredachi haracteristiki
       * @param value The value of 'specFormat'.
       * @return This builder.
       */
@@ -646,7 +646,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Checks whether the 'specFormat' field has been set.
-      * fomat peredachi harakteristiki
+      * format peredachi haracteristiki
       * @return True if the 'specFormat' field has been set, false otherwise.
       */
     public boolean hasSpecFormat() {
@@ -656,7 +656,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Clears the value of the 'specFormat' field.
-      * fomat peredachi harakteristiki
+      * format peredachi haracteristiki
       * @return This builder.
       */
     public nlmk.l3.sup.RecordSpecifications.Builder clearSpecFormat() {
@@ -667,7 +667,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Gets the value of the 'specMeasure' field.
-      * edenica izmerenya
+      * edenica izmereniya
       * @return The value.
       */
     public java.lang.CharSequence getSpecMeasure() {
@@ -677,7 +677,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Sets the value of the 'specMeasure' field.
-      * edenica izmerenya
+      * edenica izmereniya
       * @param value The value of 'specMeasure'.
       * @return This builder.
       */
@@ -690,7 +690,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Checks whether the 'specMeasure' field has been set.
-      * edenica izmerenya
+      * edenica izmereniya
       * @return True if the 'specMeasure' field has been set, false otherwise.
       */
     public boolean hasSpecMeasure() {
@@ -700,7 +700,7 @@ public class RecordSpecifications extends org.apache.avro.specific.SpecificRecor
 
     /**
       * Clears the value of the 'specMeasure' field.
-      * edenica izmerenya
+      * edenica izmereniya
       * @return This builder.
       */
     public nlmk.l3.sup.RecordSpecifications.Builder clearSpecMeasure() {

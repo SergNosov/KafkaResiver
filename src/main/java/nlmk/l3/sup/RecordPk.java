@@ -15,7 +15,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -5899783138468371936L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordPk\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"id\",\"type\":\"int\",\"doc\":\"ID EM SUP\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordPk\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"id\",\"type\":\"int\",\"doc\":\"Id EM SUP\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -71,7 +71,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
     return DECODER.decode(b);
   }
 
-  /** ID EM SUP */
+  /** Id EM SUP */
    private int id;
 
   /**
@@ -83,7 +83,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
   /**
    * All-args constructor.
-   * @param id ID EM SUP
+   * @param id Id EM SUP
    */
   public RecordPk(java.lang.Integer id) {
     this.id = id;
@@ -110,7 +110,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
   /**
    * Gets the value of the 'id' field.
-   * @return ID EM SUP
+   * @return Id EM SUP
    */
   public int getId() {
     return id;
@@ -119,7 +119,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
   /**
    * Sets the value of the 'id' field.
-   * ID EM SUP
+   * Id EM SUP
    * @param value the value to set.
    */
   public void setId(int value) {
@@ -167,7 +167,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<RecordPk>
     implements org.apache.avro.data.RecordBuilder<RecordPk> {
 
-    /** ID EM SUP */
+    /** Id EM SUP */
     private int id;
 
     /** Creates a new Builder */
@@ -201,7 +201,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
     /**
       * Gets the value of the 'id' field.
-      * ID EM SUP
+      * Id EM SUP
       * @return The value.
       */
     public int getId() {
@@ -211,7 +211,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
     /**
       * Sets the value of the 'id' field.
-      * ID EM SUP
+      * Id EM SUP
       * @param value The value of 'id'.
       * @return This builder.
       */
@@ -224,7 +224,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
     /**
       * Checks whether the 'id' field has been set.
-      * ID EM SUP
+      * Id EM SUP
       * @return True if the 'id' field has been set, false otherwise.
       */
     public boolean hasId() {
@@ -234,7 +234,7 @@ public class RecordPk extends org.apache.avro.specific.SpecificRecordBase implem
 
     /**
       * Clears the value of the 'id' field.
-      * ID EM SUP
+      * Id EM SUP
       * @return This builder.
       */
     public nlmk.l3.sup.RecordPk.Builder clearId() {

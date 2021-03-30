@@ -3,6 +3,7 @@ package com.sml.kafkareceiver.config;
 import com.sml.kafkareceiver.config.deserializer.AvroDeserializer;
 import lombok.RequiredArgsConstructor;
 import nlmk.l3.sup.IntegralParameters;
+import nlmk.l3.sup.UnrecoverableParametersTrends;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -50,10 +51,28 @@ public class UserConsumerConfig {
     }
 
     @Bean
+    public ConsumerFactory<String, UnrecoverableParametersTrends>  consumerFactoryUP(){
+
+        return new DefaultKafkaConsumerFactory<>(
+                consumerConfigs(),
+                new StringDeserializer(),
+                new AvroDeserializer<>(UnrecoverableParametersTrends.class)
+        );
+    }
+
+    @Bean
     public ConcurrentKafkaListenerContainerFactory<String,IntegralParameters>  kafkaListenerContainerFactory(){
         ConcurrentKafkaListenerContainerFactory<String,IntegralParameters> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
+        return factory;
+    }
+
+    @Bean
+    public ConcurrentKafkaListenerContainerFactory<String,UnrecoverableParametersTrends>  kafkaListenerContainerFactoryUP(){
+        ConcurrentKafkaListenerContainerFactory<String,UnrecoverableParametersTrends> factory =
+                new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(consumerFactoryUP());
         return factory;
     }
 }

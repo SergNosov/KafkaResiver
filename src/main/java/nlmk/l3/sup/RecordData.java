@@ -15,7 +15,7 @@ import org.apache.avro.message.SchemaStore;
 @org.apache.avro.specific.AvroGenerated
 public class RecordData extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -8563357007306058819L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordData\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"primeID\",\"type\":\"string\",\"doc\":\"identifikator (ID) edenicy EM v pervoistochnike CCM\"},{\"name\":\"kceh\",\"type\":\"int\",\"doc\":\"nomer ceha\"},{\"name\":\"kcehName\",\"type\":\"string\",\"doc\":\"nazvanie ceha\"},{\"name\":\"unitCode\",\"type\":\"int\",\"doc\":\"kod agregata\"},{\"name\":\"unitName\",\"type\":\"string\",\"doc\":\"nazvanie agregata\"},{\"name\":\"werksCode\",\"type\":\"int\",\"doc\":\"kod zavoda\"},{\"name\":\"werksName\",\"type\":\"string\",\"doc\":\"naimenovanie zavoda\"},{\"name\":\"specifications\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod harakteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie harakteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znacheniye harakteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"fomat peredachi harakteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmerenya\",\"default\":null}]}}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"RecordData\",\"namespace\":\"nlmk.l3.sup\",\"fields\":[{\"name\":\"primeID\",\"type\":\"string\",\"doc\":\"Identifikator (ID) edenici EM v pervoistochnike CCM\"},{\"name\":\"kceh\",\"type\":\"int\",\"doc\":\"nomer ceha\"},{\"name\":\"kcehName\",\"type\":\"string\",\"doc\":\"nazvanie ceha\"},{\"name\":\"unitCode\",\"type\":\"int\",\"doc\":\"kod agregata\"},{\"name\":\"unitName\",\"type\":\"string\",\"doc\":\"nazvanie agregata\"},{\"name\":\"werksCode\",\"type\":\"int\",\"doc\":\"kod zavoda\"},{\"name\":\"werksName\",\"type\":\"string\",\"doc\":\"naimenovanie zavoda\"},{\"name\":\"specifications\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"RecordSpecifications\",\"fields\":[{\"name\":\"specCode\",\"type\":\"int\",\"doc\":\"kod haracteristiki\"},{\"name\":\"specName\",\"type\":\"string\",\"doc\":\"naimenovanie haracteristiki\"},{\"name\":\"specTypeCode\",\"type\":\"int\",\"doc\":\"tip dannyh (1-string, 2-number, 3-date)\"},{\"name\":\"specTypeName\",\"type\":\"string\",\"doc\":\"naimenovanie tipa dannyh\"},{\"name\":\"specValue\",\"type\":[\"null\",\"float\"],\"doc\":\"znachenie haracteristiki\",\"default\":null},{\"name\":\"specFormat\",\"type\":[\"null\",\"string\"],\"doc\":\"format peredachi haracteristiki\",\"default\":null},{\"name\":\"specMeasure\",\"type\":[\"null\",\"string\"],\"doc\":\"edenica izmereniya\",\"default\":null}]}}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -71,7 +71,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
     return DECODER.decode(b);
   }
 
-  /** identifikator (ID) edenicy EM v pervoistochnike CCM */
+  /** Identifikator (ID) edenici EM v pervoistochnike CCM */
    private java.lang.CharSequence primeID;
   /** nomer ceha */
    private int kceh;
@@ -96,7 +96,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
   /**
    * All-args constructor.
-   * @param primeID identifikator (ID) edenicy EM v pervoistochnike CCM
+   * @param primeID Identifikator (ID) edenici EM v pervoistochnike CCM
    * @param kceh nomer ceha
    * @param kcehName nazvanie ceha
    * @param unitCode kod agregata
@@ -151,7 +151,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
   /**
    * Gets the value of the 'primeID' field.
-   * @return identifikator (ID) edenicy EM v pervoistochnike CCM
+   * @return Identifikator (ID) edenici EM v pervoistochnike CCM
    */
   public java.lang.CharSequence getPrimeID() {
     return primeID;
@@ -160,7 +160,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
   /**
    * Sets the value of the 'primeID' field.
-   * identifikator (ID) edenicy EM v pervoistochnike CCM
+   * Identifikator (ID) edenici EM v pervoistochnike CCM
    * @param value the value to set.
    */
   public void setPrimeID(java.lang.CharSequence value) {
@@ -333,7 +333,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<RecordData>
     implements org.apache.avro.data.RecordBuilder<RecordData> {
 
-    /** identifikator (ID) edenicy EM v pervoistochnike CCM */
+    /** Identifikator (ID) edenici EM v pervoistochnike CCM */
     private java.lang.CharSequence primeID;
     /** nomer ceha */
     private int kceh;
@@ -436,7 +436,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
     /**
       * Gets the value of the 'primeID' field.
-      * identifikator (ID) edenicy EM v pervoistochnike CCM
+      * Identifikator (ID) edenici EM v pervoistochnike CCM
       * @return The value.
       */
     public java.lang.CharSequence getPrimeID() {
@@ -446,7 +446,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
     /**
       * Sets the value of the 'primeID' field.
-      * identifikator (ID) edenicy EM v pervoistochnike CCM
+      * Identifikator (ID) edenici EM v pervoistochnike CCM
       * @param value The value of 'primeID'.
       * @return This builder.
       */
@@ -459,7 +459,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
     /**
       * Checks whether the 'primeID' field has been set.
-      * identifikator (ID) edenicy EM v pervoistochnike CCM
+      * Identifikator (ID) edenici EM v pervoistochnike CCM
       * @return True if the 'primeID' field has been set, false otherwise.
       */
     public boolean hasPrimeID() {
@@ -469,7 +469,7 @@ public class RecordData extends org.apache.avro.specific.SpecificRecordBase impl
 
     /**
       * Clears the value of the 'primeID' field.
-      * identifikator (ID) edenicy EM v pervoistochnike CCM
+      * Identifikator (ID) edenici EM v pervoistochnike CCM
       * @return This builder.
       */
     public nlmk.l3.sup.RecordData.Builder clearPrimeID() {

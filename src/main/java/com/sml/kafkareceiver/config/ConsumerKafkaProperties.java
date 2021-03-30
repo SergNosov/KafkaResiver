@@ -10,13 +10,16 @@ public class ConsumerKafkaProperties {
 
     private final String kafkaServer;
     private final String kafkaGroupId;
-    private final String kafkaTopic;
+    private final String topicIP;
+    private final String topicUP;
 
     public ConsumerKafkaProperties(@Value("${kafka.bootstrap-servers}") String kafkaServer,
                                    @Value("${kafka.consumer.group-id}") String kafkaGroupId,
-                                   @Value("${kafka.topic}") String kafkaTopic) {
+                                   @Value("${kafka.topicIP}") String topicIP,
+                                   @Value("${kafka.topicUP}")String topicUP) {
         this.kafkaServer = kafkaServer;
         this.kafkaGroupId = kafkaGroupId;
-        this.kafkaTopic = kafkaTopic;
+        this.topicIP = topicIP;
+        this.topicUP = topicUP;
     }
 }
