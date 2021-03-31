@@ -14,6 +14,10 @@ import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Список передаваемых данных, указывается при статусе I,U
+ */
+
 @Data
 @Entity
 @Table(name = "record_data")
@@ -45,7 +49,7 @@ public class RecData {
     @Column(nullable = false)
     private String werksName;// название завода
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)// todo определиться с каскадными типами
+    @OneToMany(cascade = CascadeType.ALL)// todo определиться с каскадными типами
     @JoinColumn(name = "record_data_id", nullable = false)
     private List<RecSpec> specifications = new ArrayList<>();
 

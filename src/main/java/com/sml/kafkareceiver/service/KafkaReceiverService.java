@@ -27,13 +27,13 @@ public class KafkaReceiverService {
         });
     }
 
-//    @KafkaListener(topics = {"${kafka.topicUP}"},
-//            containerFactory = "kafkaListenerContainerFactoryUP")
-//    public void receiveMessageUP(@Payload UnrecoverableParametersTrends unrecoverableParameters,
-//                                 @Headers MessageHeaders headers) {
-//        log.info("--- received unrecoverableParameters: {}", unrecoverableParameters);
-//        headers.keySet().forEach(key -> {
-//            log.info("--- {}: {}", key, headers.get(key));
-//        });
-//    }
+    @KafkaListener(topics = {"${kafka.topicUP}"},
+            containerFactory = "kafkaListenerContainerFactoryUP")
+    public void receiveMessageUP(@Payload UnrecoverableParametersTrends unrecoverableParameters,
+                                 @Headers MessageHeaders headers) {
+        log.info("--- received unrecoverableParameters: {}", unrecoverableParameters);
+        headers.keySet().forEach(key -> {
+            log.info("--- {}: {}", key, headers.get(key));
+        });
+    }
 }
