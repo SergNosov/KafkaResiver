@@ -23,7 +23,7 @@ public class RecSpec {
     private Integer specCode;//код характеристики
 
     @Column(nullable = false)
-    private String specName;//нименование характеристики
+    private String specName;//наименование характеристики
 
     @Column(nullable = false)
     private Integer specTypeCode;// тип данных (1-string, 2-number, 3-date)

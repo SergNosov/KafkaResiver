@@ -4,7 +4,7 @@ package com.sml.kafkareceiver.model;
  * Операция (I, U. D)
  */
 
-public enum op {
+public enum Operation {
     I,
     U,
     D

@@ -1,6 +1,7 @@
 package com.sml.kafkareceiver.model;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +53,8 @@ public class RecData {
 
     @OneToMany(cascade = CascadeType.ALL)// todo определиться с каскадными типами
     @JoinColumn(name = "record_data_id", nullable = false)
-    private List<RecSpec> specifications = new ArrayList<>();
+    @Size(min=1)
+    private List<RecSpec> specifications=new ArrayList<>();
 
     public void addSpec(RecSpec recordSpecification) {
         if (recordSpecification != null) {

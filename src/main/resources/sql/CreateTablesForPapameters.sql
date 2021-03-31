@@ -1,15 +1,30 @@
 create table public.integral_parameters (
     id  bigserial not null,
-    op int4 not null,
+    operation varchar not null,
     record_pk int4 not null,
     ts varchar not null,
     data_id int8,
     CONSTRAINT integral_parameters__id__pk PRIMARY KEY (id)
 );
 COMMENT ON TABLE public.integral_parameters IS E'Интегральные параметры еденицы продукции';
-COMMENT ON COLUMN public.integral_parameters.op IS E'операция';
+COMMENT ON COLUMN public.integral_parameters.operation IS E'Операция (I, U. D)';
 COMMENT ON COLUMN public.integral_parameters.ts IS E'дата и время передачи';
 COMMENT ON COLUMN public.integral_parameters.record_pk IS E'Id EM СУП';
+COMMENT ON COLUMN public.integral_parameters.data_id IS E'id cписка передаваемых данных, указывается при статусе I,U';
+
+create table public.unrecoverable_parameters (
+    id  bigserial not null,
+    operation varchar not null,
+    record_pk int4 not null,
+    ts varchar not null,
+    data_id int8,
+    CONSTRAINT unrecoverable_parameters__id__pk PRIMARY KEY (id)
+);
+COMMENT ON TABLE public.unrecoverable_parameters IS E'Передача не хранимых параметров трендов';
+COMMENT ON COLUMN public.unrecoverable_parameters.operation IS E'Операция (I, U. D)';
+COMMENT ON COLUMN public.unrecoverable_parameters.ts IS E'дата и время передачи';
+COMMENT ON COLUMN public.unrecoverable_parameters.record_pk IS E'Id EM СУП';
+COMMENT ON COLUMN public.unrecoverable_parameters.data_id IS E'id cписка передаваемых данных, указывается при статусе I,U';
 
 create table public.record_data (
     id  bigserial not null,
@@ -60,3 +75,9 @@ alter table public.integral_parameters
 
 alter table public.record_specifications
     add constraint FKofb8ca8c18ai4hvylwo3nwsgf foreign key (record_data_id) references record_data;
+
+alter table public.unrecoverable_parameters
+    add constraint UK_jr2as9xir0gep6os5ry448tmp unique (data_id);
+
+alter table public.unrecoverable_parameters
+    add constraint FK2588vsek6ts0i02j7rbqif4v6 foreign key (data_id) references record_data;
