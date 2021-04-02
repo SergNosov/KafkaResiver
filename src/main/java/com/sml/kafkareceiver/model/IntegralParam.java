@@ -1,17 +1,8 @@
 package com.sml.kafkareceiver.model;
 
 import lombok.Data;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
+import lombok.ToString;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -20,6 +11,6 @@ import javax.persistence.Table;
 @Data
 @Entity
 @Table(name = "integral_parameters")
+@ToString(callSuper = true)
 public class IntegralParam extends BaseParam{
-
 }

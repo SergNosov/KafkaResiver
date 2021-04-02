@@ -4,8 +4,6 @@ import lombok.Data;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,8 +24,7 @@ public class BaseParam {
     private String ts;//дата и время передачи
 
     @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Operation operation;// операция
+    private String operation;// операция
 
     @Column(nullable = false)
     private Integer recordPk;//Id EM СУП
